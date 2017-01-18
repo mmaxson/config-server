@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @EnableConfigServer
-@PropertySource("classpath:/properties/application.properties")
+@PropertySource("classpath:/properties/${spring.profiles.active}/application.properties")
 
 public class ConfigServer {
 
