@@ -12,5 +12,5 @@ Env variables:
 
 
 Usage:
-    curl root:marku@localhost:8888/encrypt mysecret
-    curl root:marku@localhost:8888/decrypt
+    curl root:marku@localhost:8888/encrypt -d mysecret
+    curl root:marku@localhost:8888/decrypt --data-urlencode xxx
