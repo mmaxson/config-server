@@ -1,0 +1,16 @@
+
+Patch location for unlimited strength JCE is
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/security.
+
+You need to copy the local_policy.jar and US_export_policy.jar
+
+Run:
+
+Env variables:
+    ENCRYPT_KEY=jamIt;SPRING_PROFILES_ACTIVE=dev;SECURITY_USER_PASSWORD=marku;SERVER_PORT=8888
+
+
+
+Usage:
+    curl root:marku@localhost:8888/encrypt mysecret
+    curl root:marku@localhost:8888/decrypt
