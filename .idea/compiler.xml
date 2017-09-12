@@ -10,7 +10,7 @@
         <module name="config-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7">
+    <bytecodeTargetLevel target="1.8">
       <module name="config-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
